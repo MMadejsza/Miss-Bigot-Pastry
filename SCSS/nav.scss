@@ -1,7 +1,7 @@
 #nav {
     height: 40px;
     padding: 5px;
-    width: 100%;
+    width: 100vw;
     margin: 20px 0px 75px 0px;
     text-align: center;
     box-shadow: 0px 10px 15px -10px $secondary-color;
@@ -9,12 +9,12 @@
 
 .navcontent {
     padding: 0px;
-    width: 1000px;
+    width: 80vw;
     @include center-div;
 }
 
 .oltopnav {
-    font-size: 20px;
+
     padding: 0;
     margin: 0;
     font-weight: 700;
@@ -27,9 +27,9 @@
 
     li {
         float: left;
-        font-size: 18px;
+        font-size: $nav-font-size;
         height: 37px;
-        width: 200px;
+        width: 16vw;
         @include primary-transition();
 
         &:hover {
@@ -48,7 +48,8 @@
 
             li {
                 position: relative;
-                transition: all 0.3s ease-in-out;
+                @include primary-transition();
+                font-size: 0.8em;
 
                 &:hover {
                     box-shadow: $each-position-shadow;
