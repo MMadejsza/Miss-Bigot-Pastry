@@ -20,27 +20,21 @@
     font-weight: 700;
     list-style-type: none;
 
+
+    a {
+        @include nav-a;
+    }
+
     li {
         float: left;
         font-size: 18px;
         height: 37px;
         width: 200px;
-        transition: box-shadow 0.3s ease-in-out;
-
-        a {
-            color: #5a291a;
-            text-decoration: none;
-            display: block;
-            height: 100%;
-            padding-top: 6px;
-
-        }
+        transition: all 0.3s ease-in-out;
 
         &:hover {
-            color: #5a291a;
-            box-shadow: 0px 5px 25px -5PX #3b5d78;
-            border-radius: 8px;
-            display: block;
+            box-shadow: $each-position-shadow;
+            border-radius: $primary-radius;
 
             ul {
                 display: block;
@@ -49,28 +43,19 @@
 
         ul {
             list-style-type: none;
-            padding: 0px;
-            margin: 0px;
             height: 35px;
             display: none;
-            transition: all;
 
             li {
                 position: relative;
-                transition: box-shadow 0.3s ease-in-out;
-
-                a {
-                    color: $nav-font-color;
-                }
+                transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    box-shadow: 0px 4px 23px -6PX $secondary-color;
-                    border-radius: 5px;
-                    transition: box-shadow 0.3s ease-in-out;
+                    box-shadow: $each-position-shadow;
+                    border-radius: $primary-radius;
 
                     a {
                         text-decoration: underline;
-                        color: $nav-font-color;
                     }
                 }
             }

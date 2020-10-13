@@ -8,8 +8,18 @@ $nav-font-color: #5a291a;
 $back-color: #fdfdfd;
 $primary-font-color: black;
 $secondary-color: #3b5d78;
+$each-position-shadow:0px 5px 25px -5PX $secondary-color;
+$primary-radius:8px;
 
 @mixin center-div {
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin nav-a {
+    color: $nav-font-color;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding-top: 6px;
 }
