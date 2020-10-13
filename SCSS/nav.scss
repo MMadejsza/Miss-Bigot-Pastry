@@ -30,7 +30,7 @@
         font-size: 18px;
         height: 37px;
         width: 200px;
-        transition: all 0.3s ease-in-out;
+        @include primary-transition();
 
         &:hover {
             box-shadow: $each-position-shadow;
