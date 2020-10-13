@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$nav-font-color: #5a291a;
+$back-color: #fdfdfd;
+$primary-font-color: black;
+$secondary-color: #3b5d78;
+
+@mixin center-div {
+    margin-left: auto;
+    margin-right: auto;
+}

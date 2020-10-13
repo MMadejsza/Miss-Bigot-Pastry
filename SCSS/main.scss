@@ -2,3 +2,21 @@
 @import "nav.scss";
 @import "body.scss";
 @import "footer.scss";
+
+html {
+    background-color: $back-color;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    color: $primary-font-color;
+}
+
+#logo {
+    height: 100px;
+    font-size: 76px;
+    font-weight: 700;
+    color: $nav-font-color;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
