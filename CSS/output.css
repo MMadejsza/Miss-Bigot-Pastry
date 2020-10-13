@@ -4,4 +4,83 @@
   box-sizing: border-box;
 }
 
+#nav {
+  height: 40px;
+  padding: 5px;
+  width: 100vw;
+  margin: 20px 0px 75px 0px;
+  text-align: center;
+  box-shadow: 0px 10px 15px -10px #3b5d78;
+}
+
+.navcontent {
+  padding: 0px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.oltopnav {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  list-style-type: none;
+}
+.oltopnav a {
+  color: #5a291a;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  padding-top: 6px;
+}
+.oltopnav li {
+  float: left;
+  font-size: 20px;
+  height: 37px;
+  width: 16vw;
+  transition: all 0.3s ease-in-out;
+}
+.oltopnav li:hover {
+  box-shadow: 0px 5px 25px -5px #3b5d78;
+  border-radius: 8px;
+}
+.oltopnav li:hover ul {
+  display: block;
+}
+.oltopnav li ul {
+  list-style-type: none;
+  height: 35px;
+  display: none;
+}
+.oltopnav li ul li {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.8em;
+}
+.oltopnav li ul li:hover {
+  box-shadow: 0px 5px 25px -5px #3b5d78;
+  border-radius: 8px;
+}
+.oltopnav li ul li:hover a {
+  text-decoration: underline;
+}
+
+html {
+  background-color: #fdfdfd;
+  font-family: "Balsamiq Sans", cursive;
+  text-align: center;
+  color: black;
+}
+
+#logo {
+  height: 100px;
+  font-size: 76px;
+  font-weight: 700;
+  color: #5a291a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
 /*# sourceMappingURL=output.css.map */
