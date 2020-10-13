@@ -20,61 +20,60 @@
     font-weight: 700;
     list-style-type: none;
 
-}
+    li {
+        float: left;
+        font-size: 18px;
+        height: 37px;
+        width: 200px;
+        transition: box-shadow 0.3s ease-in-out;
 
-.oltopnav>li {
-    float: left;
-    font-size: 18px;
-    height: 37px;
-    width: 200px;
-    transition: box-shadow 0.3s ease-in-out;
-}
+        a {
+            color: #5a291a;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            padding-top: 6px;
 
-.oltopnav>li a {
-    color: #5a291a;
-    text-decoration: none;
-    display: block;
-    height: 100%;
-    padding-top: 6px;
+        }
 
-}
+        &:hover {
+            color: #5a291a;
+            box-shadow: 0px 5px 25px -5PX #3b5d78;
+            border-radius: 8px;
+            display: block;
 
-.oltopnav>li:hover {
-    color: #5a291a;
-    box-shadow: 0px 5px 25px -5PX #3b5d78;
-    border-radius: 8px;
-    display: block;
-}
+            ul {
+                display: block;
+            }
+        }
 
-.oltopnav>li>ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    height: 35px;
-    display: none;
-    transition: all;
-}
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            height: 35px;
+            display: none;
+            transition: all;
 
-.oltopnav>li:hover>ul {
-    display: block;
-}
+            li {
+                position: relative;
+                transition: box-shadow 0.3s ease-in-out;
 
-.oltopnav>li>ul>li {
-    position: relative;
-    transition: box-shadow 0.3s ease-in-out;
-}
+                a {
+                    color: $nav-font-color;
+                }
 
-.oltopnav>li>ul>li a {
-    color: #5a291a;
-}
+                &:hover {
+                    box-shadow: 0px 4px 23px -6PX $secondary-color;
+                    border-radius: 5px;
+                    transition: box-shadow 0.3s ease-in-out;
 
-.oltopnav>li>ul>li:hover {
-    box-shadow: 0px 4px 23px -6PX #3b5d78;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.oltopnav>li>ul>li:hover>a {
-    text-decoration: underline;
-    color: #5a291a;
+                    a {
+                        text-decoration: underline;
+                        color: $nav-font-color;
+                    }
+                }
+            }
+        }
+    }
 }
