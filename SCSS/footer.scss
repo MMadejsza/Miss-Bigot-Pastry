@@ -1,0 +1,101 @@
+#footer {
+    background-color: #4a180a;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 20px;
+    text-align: center;
+    color: #f5d1c3;
+}
+
+#socials {
+    width: 550px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.sbutton {
+    float: left;
+    width: 100px;
+    height: 75px;
+    margin: 15px 5px 5px 5px;
+    padding: 15px 10px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #f5d1c3;
+}
+
+#fb:hover {
+    color: #4668b3;
+    text-shadow: 0px 0px 50px white;
+}
+
+
+#inst:hover {
+    color: #FCAF45;
+    text-shadow: 0px 0px 50px white;
+}
+
+#tw:hover {
+    color: #3095d3;
+    text-shadow: 0px 0px 50px white;
+}
+
+#yt:hover {
+    color: #c83237;
+    text-shadow: 0px 0px 50px white;
+}
+
+#gplus:hover {
+    color: #d95333;
+    text-shadow: 0px 0px 50px white;
+}
+
+#fcontentL {
+    float: left;
+    width: 50%;
+    height: 21px;
+    padding: 0px 0px 10px 0px;
+    font-size: 16px;
+}
+
+#fcontentR {
+    float: left;
+    width: 50%;
+    height: 21px;
+    padding: 0px;
+}
+
+.ulfooter {
+    font-size: 16px;
+    padding: 0px;
+    width: 500px;
+    margin: auto;
+    list-style-type: none;
+}
+
+.ulfooter>li {
+    float: left;
+    padding: 0px 5px;
+    width: 100px;
+}
+
+.ulfooter>li>a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.ulfooter>li:hover a {
+    /* text-shadow: 0px 0px 50px 5px white;  NIE MOŻNA NADAĆ 5PX GRUBOŚCI CIENIA DLA TEXT JAK W BOX-SHADOW? Chciałam aby kształt tła nie miał ostrych krawędzi tylko rozmywał się jak cień i całość była biała ale czego próbowałem to krawędzie były za ostre i prostokąt stawał się widoczny  */
+    /* display: block; */
+    box-shadow: 0px 0px 30px 5px white;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.spanmiddle {
+    text-align: center;
+    vertical-align: middle;
+}
