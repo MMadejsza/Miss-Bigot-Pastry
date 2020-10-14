@@ -28,3 +28,10 @@ $primary-radius:8px;
     height: 100%;
     padding-top: 6px;
 }
+
+@mixin flex($row, $justify, $align) {
+    display: flex;
+    flex-flow: $row wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
