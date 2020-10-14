@@ -6,20 +6,10 @@ body {
 .mainsection {
     @include flex(row, center, center);
     width: 100vw;
-    height: 400px;
+    height: $home-sections-size;
     // border: 1px dashed black;
     overflow: visible;
     margin-bottom: 0px 0px 40px 0px;
-}
-
-.pictureone {
-    width: 50vw;
-    transition: transform 0.5s ease-in-out;
-    // align-self: end;
-
-    &:hover {
-        transform: scale(1.015);
-    }
 }
 
 .sectioncontentleft {
@@ -28,75 +18,79 @@ body {
     margin: 75px 0px;
 }
 
-.sectioncontentcenter {
-    width: 100vw;
-    padding: 10px 10px 10px 10px;
-    margin: 5px 5px 10px 5px;
+.pictureone {
+    width: 50vw;
+    @include primary-transition();
+    // align-self: end;
 
-    h1 {
-        flex-grow: 4;
+    &:hover {
+        transform: $home-transform-scale;
     }
 }
 
-.rounddiv {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 0px 35px 0px 35px;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
+.sectioncontentcenter {
+    width: 100vw;
+
+    header {
+        flex-basis: 100%;
+    }
+
+    .rounddiv {
+        @include round-div(300px);
+        margin: 0px 35px 0px 35px;
+        overflow: hidden;
+        @include home-transition();
+
+        &:hover {
+            box-shadow: $div-shadow;
+            transform: $home-transform-scale;
+        }
+
+        .overlay {
+            position: relative;
+            @include round-div(300px);
+        }
+    }
+
+    .background {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 75px;
+        left: 0px;
+        bottom: 0px;
+        margin: 0px;
+        padding: 25px 0px 0px 0px;
+        text-align-last: center;
+        opacity: 0;
+        background-color: black;
+        @include home-transition(opacity);
+    }
+
+    .desc {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 75px;
+        left: 0px;
+        bottom: 0px;
+        margin: 0px;
+        padding: 25px 0px 0px 0px;
+        text-align-last: center;
+        opacity: 0;
+        color: white;
+    }
+
+    .overlay:hover .background {
+        opacity: 0.5;
+    }
+
+    .overlay:hover .desc {
+        opacity: 1;
+    }
 }
 
-.rounddiv:hover {
-    box-shadow: 0px 4px 20px 3px #3b5d78;
-    transform: scale(1.02);
-    overflow: hidden;
-}
 
-.overlay {
-    float: left;
-    position: relative;
-    width: 300px;
-    height: 300px;
-}
-
-.background {
-    display: block;
-    position: absolute;
-    width: 300px;
-    height: 75px;
-    left: 0px;
-    bottom: 0px;
-    margin: 0px;
-    padding: 25px 0px 0px 0px;
-    text-align-last: center;
-    opacity: 0;
-    background-color: black;
-    transition: opacity 0.4s cubic-bezier(0, 0, 0.49, 1.06);
-}
-
-.desc {
-    display: block;
-    position: absolute;
-    width: 300px;
-    height: 75px;
-    left: 0px;
-    bottom: 0px;
-    margin: 0px;
-    padding: 25px 0px 0px 0px;
-    text-align-last: center;
-    opacity: 0;
-    color: white;
-}
-
-.overlay:hover .background {
-    opacity: 0.5;
-}
-
-.overlay:hover .desc {
-    opacity: 1;
-}
 
 .sectioncontentright {
     float: right;
@@ -113,13 +107,13 @@ body {
     margin: 10px 25px 0px 25px;
     overflow: hidden;
     border: 1px dotted black;
-    transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
+    @include home-transition();
 
 }
 
 .rounddivsmall:hover {
-    box-shadow: 0px 4px 20px 3px #3b5d78;
-    transform: scale(1.02);
+    box-shadow: $div-shadow;
+    transform: $home-transform-scale;
     overflow: hidden;
 }
 
@@ -135,7 +129,7 @@ body {
     text-align-last: center;
     opacity: 0;
     background-color: black;
-    transition: opacity 0.4s cubic-bezier(0, 0, 0.49, 1.06);
+    @include home-transition(opacity);
 }
 
 .descsmall {
@@ -171,11 +165,11 @@ body {
 .three {
     float: left;
     width: 620px;
-    transition: all 0.5s ease-in-out;
+    @include primary-transition(all);
 }
 
 .three:hover {
-    transform: scale(1.02);
+    transform: $home-transform-scale;
 }
 
 p {

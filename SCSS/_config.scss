@@ -9,16 +9,37 @@ $nav-font-size: 20px;
 $back-color: #fdfdfd;
 $primary-font-color: black;
 $secondary-color: #3b5d78;
-$each-position-shadow:0px 5px 25px -5px $secondary-color;
+$each-position-shadow:0px 5px 25px -5px;
+$div-shadow:0px 4px 20px 3px $secondary-color;
 $primary-radius:8px;
+$home-sections-size: 400px;
+$home-transform-scale:scale(1.02);
+
 
 @mixin primary-transition($feature: all) {
     transition: $feature 0.3s ease-in-out;
 }
 
+@mixin home-transition($feature: all) {
+    transition: $feature 0.3s cubic-bezier(0, 0, 0.49, 1.06);
+}
+
+@mixin flex($row, $justify, $align) {
+    display: flex;
+    flex-flow: $row wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 @mixin center-div {
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin round-div($size) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
 }
 
 @mixin nav-a {
@@ -27,11 +48,4 @@ $primary-radius:8px;
     display: block;
     height: 100%;
     padding-top: 6px;
-}
-
-@mixin flex($row, $justify, $align) {
-    display: flex;
-    flex-flow: $row wrap;
-    justify-content: $justify;
-    align-items: $align;
 }
