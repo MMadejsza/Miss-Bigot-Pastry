@@ -67,7 +67,7 @@ body {
         @include home-transition(opacity);
     }
 
-    .desc {
+    .label {
         display: block;
         position: absolute;
         width: 300px;
@@ -132,7 +132,7 @@ body {
     @include home-transition(opacity);
 }
 
-.descsmall {
+.labelsmall {
     display: block;
     position: absolute;
     width: 100px;
