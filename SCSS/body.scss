@@ -62,100 +62,84 @@ body {
         }
 
         .background {
-            @include overlay(300px, 75px);
+            @include overlay(300px, 75px, normal);
             background-color: black;
             @include home-transition(opacity);
         }
 
         .label {
-            @include overlay(300px, 75px);
+            @include overlay(300px, 75px, normal);
             color: white;
         }
     }
 }
 
+.picturethree {
+    width: 50vw;
+    height: 100%;
+    @include primary-transition(all);
 
+    &:hover {
+        transform: $home-transform-scale;
+    }
+}
 
 .sectioncontentright {
-    float: right;
+    width: 50vw;
     padding: 10px 100px 10px 10px;
-    margin: 75px 5px 60px 5px;
-    width: 50%;
-}
+    margin: auto 0px;
+    @include flex(row, center, center);
 
-.rounddivsmall {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 10px 25px 0px 25px;
-    overflow: hidden;
-    border: 1px dotted black;
-    @include home-transition();
+    header {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
 
-}
+    p {
+        margin-bottom: 30px;
+    }
 
-.rounddivsmall:hover {
-    box-shadow: $div-shadow;
-    transform: $home-transform-scale;
-    overflow: hidden;
-}
+    .rounddivsmall {
+        @include round-div(100px);
+        margin: 0px 25px;
+        overflow: hidden;
+        @include home-transition();
 
-.backgroundsmall {
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 25px;
-    left: 0px;
-    bottom: 0px;
-    margin: 0px;
-    padding: 5px 0px 0px 0px;
-    text-align-last: center;
-    opacity: 0;
-    background-color: black;
-    @include home-transition(opacity);
-}
+        &:hover {
+            box-shadow: $div-shadow;
+            transform: $home-transform-scale;
+            overflow: hidden;
+        }
 
-.labelsmall {
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 25px;
-    left: 0px;
-    bottom: 0px;
-    margin: 0px;
-    padding: 2px 0px 0px 0px;
-    text-align-last: center;
-    opacity: 0;
-    font-size: 14px;
-    color: white;
-}
+        .overlaysmall {
+            position: relative;
+            width: 100px;
+            height: 100px;
 
-.overlaysmall {
-    float: left;
-    position: relative;
-    width: 100px;
-    height: 100px;
-}
+            &:hover {
+                .backgroundsmall {
+                    opacity: 0.5;
+                }
 
-.overlaysmall:hover .backgroundsmall {
-    opacity: 0.5;
-}
+                .labelsmall {
+                    opacity: 1;
+                }
+            }
+        }
 
-.overlaysmall:hover .labelsmall {
-    opacity: 1;
-}
+        .backgroundsmall {
+            @include overlay(100px, 25px, small);
+            opacity: 0;
+            background-color: black;
+            @include home-transition(opacity);
+        }
 
-.three {
-    float: left;
-    width: 620px;
-    @include primary-transition(all);
-}
-
-.three:hover {
-    transform: $home-transform-scale;
-}
-
-p {
-    text-align: justify;
+        .labelsmall {
+            @include overlay(100px, 25px, small);
+            opacity: 0;
+            font-size: 14px;
+            color: white;
+            margin-bottom: 3px;
+        }
+    }
 }

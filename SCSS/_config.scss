@@ -42,16 +42,28 @@ $home-transform-scale:scale(1.02);
     border-radius: 50%;
 }
 
-@mixin overlay($width, $height) {
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    opacity: 0;
-    width: $width;
-    height: $height;
-    padding: 25px 0px 0px 0px;
-    text-align: center;
+@mixin overlay($width, $height, $type) {
+    @if $type=="small" {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        opacity: 0;
+        width: $width;
+        height: $height;
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+    }
 
+    @else {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        opacity: 0;
+        width: $width;
+        height: $height;
+        padding: 25px 0px 0px 0px;
+        text-align: center;
+    }
 }
 
 @mixin nav-a {
