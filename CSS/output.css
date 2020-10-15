@@ -89,6 +89,10 @@ body {
 }
 
 .pictureone {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
   width: 50vw;
   transition: all 0.3s ease-in-out;
 }
@@ -151,7 +155,11 @@ body {
 }
 
 .picturethree {
-  width: 50vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -160,7 +168,8 @@ body {
 }
 
 .sectioncontentright {
-  width: 50vw;
+  width: 50%;
+  height: 100%;
   padding: 10px 100px 10px 10px;
   margin: auto 0px;
   display: flex;
@@ -170,10 +179,6 @@ body {
 }
 .sectioncontentright header {
   flex-basis: 100%;
-  margin-bottom: 10px;
-}
-.sectioncontentright p {
-  margin-bottom: 30px;
 }
 .sectioncontentright .rounddivsmall {
   width: 100px;
@@ -233,7 +238,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #5a291a;
-  width: 100%;
+  width: 100vw;
   min-height: 100px;
   margin-top: 20px;
   text-align: center;
