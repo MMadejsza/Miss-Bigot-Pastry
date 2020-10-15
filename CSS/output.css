@@ -259,6 +259,7 @@ body {
   height: 75px;
   margin: 15px 5px 5px 5px;
   padding: 15px 10px;
+  transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
 #socials #fb:hover {
   color: #4668b3;
@@ -282,12 +283,14 @@ body {
 }
 
 #fcontentL {
+  order: 2;
   width: 50%;
   height: 21px;
   text-justify: center;
 }
 
 #fcontentR {
+  order: 1;
   width: 50%;
   height: 21px;
 }

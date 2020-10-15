@@ -25,6 +25,8 @@
         height: 75px;
         margin: 15px 5px 5px 5px;
         padding: 15px 10px;
+        @include home-transition();
+
     }
 
     #fb:hover {
@@ -54,12 +56,14 @@
 }
 
 #fcontentL {
+    order: 2;
     width: 50%;
     height: 21px;
     text-justify: center;
 }
 
 #fcontentR {
+    order: 1;
     width: 50%;
     height: 21px;
 }
