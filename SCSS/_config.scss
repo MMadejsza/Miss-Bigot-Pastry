@@ -32,6 +32,14 @@ $footer-text-shadow:0px 0px 50px white;
     align-items: $align;
 }
 
+@mixin flex-order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+    order: $val;
+}
+
 @mixin center-div {
     margin-left: auto;
     margin-right: auto;

@@ -7,7 +7,6 @@ body {
     @include flex(row, center, center);
     width: 100vw;
     height: $home-sections-size;
-    // border: 1px dashed black;
     overflow: visible;
     margin-bottom: 0px 0px 40px 0px;
 }
@@ -16,6 +15,10 @@ body {
     width: 50vw;
     padding: 10px 10px 10px 100px;
     margin: 75px 0px;
+
+    h1 {
+        margin-bottom: 15px;
+    }
 }
 
 .pictureone {
@@ -90,9 +93,10 @@ body {
     height: 100%;
     padding: 10px 100px 10px 10px;
     margin: auto 0px;
-    @include flex(row, center, center);
+    @include flex (row, center, flex-start);
 
-    header {
+    h1 {
+        margin-top: 50px;
         flex-basis: 100%;
         // margin-bottom: 10px;
     }

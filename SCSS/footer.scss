@@ -56,14 +56,14 @@
 }
 
 #fcontentL {
-    order: 2;
+    @include flex-order(2);
     width: 50%;
     height: 21px;
     text-justify: center;
 }
 
 #fcontentR {
-    order: 1;
+    @include flex-order(1);
     width: 50%;
     height: 21px;
 }
