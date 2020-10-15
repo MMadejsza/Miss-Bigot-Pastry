@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -224,6 +225,101 @@ body {
   font-size: 14px;
   color: white;
   margin-bottom: 3px;
+}
+
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a291a;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 20px;
+  text-align: center;
+  color: #f5d1c3;
+}
+#footer a {
+  text-decoration: none;
+  color: #f5d1c3;
+}
+
+#socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  width: 550px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+#socials .sbutton {
+  width: 100px;
+  height: 75px;
+  margin: 15px 5px 5px 5px;
+  padding: 15px 10px;
+}
+#socials #fb:hover {
+  color: #4668b3;
+  text-shadow: 0px 0px 50px white;
+}
+#socials #inst:hover {
+  color: #FCAF45;
+  text-shadow: 0px 0px 50px white;
+}
+#socials #tw:hover {
+  color: #3095d3;
+  text-shadow: 0px 0px 50px white;
+}
+#socials #yt:hover {
+  color: #c83237;
+  text-shadow: 0px 0px 50px white;
+}
+#socials #gplus:hover {
+  color: #d95333;
+  text-shadow: 0px 0px 50px white;
+}
+
+#fcontentL {
+  width: 50%;
+  height: 21px;
+  text-justify: center;
+}
+
+#fcontentR {
+  width: 50%;
+  height: 21px;
+}
+
+.ulfooter {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 21px;
+  list-style-type: none;
+}
+.ulfooter li {
+  padding-left: 10px;
+  width: 100px;
+}
+.ulfooter li:first-child {
+  padding-left: 0px;
+}
+.ulfooter li a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+.ulfooter li:hover a {
+  /* text-shadow: 0px 0px 50px 5px white;  NIE MOŻNA NADAĆ 5PX GRUBOŚCI CIENIA DLA TEXT JAK W BOX-SHADOW? Chciałem aby kształt tła nie miał ostrych krawędzi tylko rozmywał się jak cień i całość była biała ale czego próbowałem to krawędzie były za ostre i prostokąt stawał się widoczny  */
+  /* display: block; */
+  box-shadow: 0px 0px 30px 5px white;
+  border-radius: 8px;
+  background-color: white;
 }
 
 html {
