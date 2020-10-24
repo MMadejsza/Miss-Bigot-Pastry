@@ -11,6 +11,7 @@
     padding: 0px;
     width: 80vw;
     @include center-div;
+    @include flex(row, center, center);
 }
 
 .oltopnav {
@@ -29,8 +30,9 @@
         float: left;
         font-size: $nav-font-size;
         height: 37px;
-        width: 16vw;
+        width: 10vw;
         color: $nav-font-color;
+        cursor: default;
         @include primary-transition();
 
         &:hover {
@@ -38,13 +40,13 @@
             border-radius: $primary-radius;
 
             ul {
-                display: block;
+                @include flex(column, center, center);
             }
         }
 
         ul {
             list-style-type: none;
-            height: 35px;
+            // height: 35px;
             display: none;
             padding-top: 15px;
 
@@ -52,6 +54,7 @@
                 position: relative;
                 @include primary-transition();
                 font-size: 0.8em;
+                // width: auto;
 
                 &:hover {
                     box-shadow: $each-position-shadow;
@@ -59,6 +62,7 @@
 
                     a {
                         text-decoration: underline;
+                        color: $nav-font-color;
                     }
                 }
             }

@@ -31,7 +31,7 @@ $map-socials-colors: ("fb":#4668b3, "inst": #FCAF45, "tw": #3095d3, "yt":#c83237
 @mixin flex($row, $justify, $align) {
     display: flex;
     flex-flow: $row wrap;
-    justify-content: $justify;
+    justify-content: $justify; // flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right 
     align-items: $align;
 }
 
