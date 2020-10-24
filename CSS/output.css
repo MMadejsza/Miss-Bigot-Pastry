@@ -31,6 +31,9 @@
   font-weight: 700;
   list-style-type: none;
 }
+.oltopnav .current-page {
+  color: #ee9e2f;
+}
 .oltopnav a {
   color: #5a291a;
   text-decoration: none;

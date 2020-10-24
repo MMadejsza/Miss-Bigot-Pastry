@@ -21,9 +21,13 @@
     font-weight: 700;
     list-style-type: none;
 
+    .current-page {
+        color: $font-color-current
+    }
 
     a {
         @include nav-a;
+
     }
 
     li {
