@@ -30,6 +30,7 @@
         font-size: $nav-font-size;
         height: 37px;
         width: 16vw;
+        color: $nav-font-color;
         @include primary-transition();
 
         &:hover {
@@ -45,6 +46,7 @@
             list-style-type: none;
             height: 35px;
             display: none;
+            padding-top: 15px;
 
             li {
                 position: relative;

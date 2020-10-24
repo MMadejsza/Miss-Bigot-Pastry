@@ -9,7 +9,7 @@ $nav-font-size: 20px;
 $back-color: #fdfdfd;
 $primary-font-color: black;
 $secondary-color: #3b5d78;
-$each-position-shadow:0px 5px 25px -5px;
+$each-position-shadow:0px 5px 25px -5px $secondary-color;
 $div-shadow:0px 4px 20px 3px $secondary-color;
 $primary-radius:8px;
 $home-sections-size: 400px;

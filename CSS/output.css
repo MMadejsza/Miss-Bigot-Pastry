@@ -39,10 +39,11 @@
   font-size: 20px;
   height: 37px;
   width: 16vw;
+  color: #5a291a;
   transition: all 0.3s ease-in-out;
 }
 .oltopnav li:hover {
-  box-shadow: 0px 5px 25px -5px;
+  box-shadow: 0px 5px 25px -5px #3b5d78;
   border-radius: 8px;
 }
 .oltopnav li:hover ul {
@@ -52,6 +53,7 @@
   list-style-type: none;
   height: 35px;
   display: none;
+  padding-top: 15px;
 }
 .oltopnav li ul li {
   position: relative;
@@ -59,7 +61,7 @@
   font-size: 0.8em;
 }
 .oltopnav li ul li:hover {
-  box-shadow: 0px 5px 25px -5px;
+  box-shadow: 0px 5px 25px -5px #3b5d78;
   border-radius: 8px;
 }
 .oltopnav li ul li:hover a {
