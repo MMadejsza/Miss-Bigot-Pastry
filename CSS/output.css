@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -31,9 +32,11 @@
   font-weight: 700;
   list-style-type: none;
 }
+
 .oltopnav .current-page {
   color: #ee9e2f;
 }
+
 .oltopnav a {
   color: #5a291a;
   text-decoration: none;
@@ -41,6 +44,7 @@
   height: 100%;
   padding-top: 6px;
 }
+
 .oltopnav li {
   float: left;
   font-size: 20px;
@@ -50,30 +54,36 @@
   cursor: default;
   transition: all 0.3s ease-in-out;
 }
+
 .oltopnav li:hover {
   box-shadow: 0px 5px 25px -5px #3b5d78;
   border-radius: 8px;
 }
+
 .oltopnav li:hover ul {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
+
 .oltopnav li ul {
   list-style-type: none;
   display: none;
   padding-top: 15px;
 }
+
 .oltopnav li ul li {
   position: relative;
   transition: all 0.3s ease-in-out;
   font-size: 0.8em;
 }
+
 .oltopnav li ul li:hover {
   box-shadow: 0px 5px 25px -5px #3b5d78;
   border-radius: 8px;
 }
+
 .oltopnav li ul li:hover a {
   text-decoration: underline;
   color: #5a291a;
@@ -100,6 +110,7 @@ body {
   padding: 10px 10px 10px 100px;
   margin: 75px 0px;
 }
+
 .sectioncontentleft h1 {
   margin-bottom: 15px;
 }
@@ -112,6 +123,7 @@ body {
   width: 50vw;
   transition: all 0.3s ease-in-out;
 }
+
 .pictureone:hover {
   transform: scale(1.02);
 }
@@ -119,9 +131,11 @@ body {
 .sectioncontentcenter {
   width: 100vw;
 }
+
 .sectioncontentcenter header {
   flex-basis: 100%;
 }
+
 .sectioncontentcenter .rounddiv {
   width: 300px;
   height: 300px;
@@ -130,22 +144,27 @@ body {
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 .sectioncontentcenter .rounddiv:hover {
   box-shadow: 0px 4px 20px 3px #3b5d78;
   transform: scale(1.02);
 }
+
 .sectioncontentcenter .rounddiv .overlay {
   position: relative;
   width: 300px;
   height: 300px;
   border-radius: 50%;
 }
+
 .sectioncontentcenter .rounddiv .overlay:hover .background {
   opacity: 0.5;
 }
+
 .sectioncontentcenter .rounddiv .overlay:hover .label {
   opacity: 1;
 }
+
 .sectioncontentcenter .rounddiv .background {
   display: block;
   position: absolute;
@@ -158,6 +177,7 @@ body {
   background-color: black;
   transition: opacity 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 .sectioncontentcenter .rounddiv .label {
   display: block;
   position: absolute;
@@ -179,6 +199,7 @@ body {
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
+
 .picturethree:hover {
   transform: scale(1.02);
 }
@@ -193,10 +214,12 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+
 .sectioncontentright h1 {
   margin-top: 50px;
   flex-basis: 100%;
 }
+
 .sectioncontentright .rounddivsmall {
   width: 100px;
   height: 100px;
@@ -205,22 +228,27 @@ body {
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 .sectioncontentright .rounddivsmall:hover {
   box-shadow: 0px 4px 20px 3px #3b5d78;
   transform: scale(1.02);
   overflow: hidden;
 }
+
 .sectioncontentright .rounddivsmall .overlaysmall {
   position: relative;
   width: 100px;
   height: 100px;
 }
+
 .sectioncontentright .rounddivsmall .overlaysmall:hover .backgroundsmall {
   opacity: 0.5;
 }
+
 .sectioncontentright .rounddivsmall .overlaysmall:hover .labelsmall {
   opacity: 1;
 }
+
 .sectioncontentright .rounddivsmall .backgroundsmall {
   display: block;
   position: absolute;
@@ -234,6 +262,7 @@ body {
   background-color: black;
   transition: opacity 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 .sectioncontentright .rounddivsmall .labelsmall {
   display: block;
   position: absolute;
@@ -261,6 +290,7 @@ body {
   text-align: center;
   color: #f5d1c3;
 }
+
 #footer a {
   text-decoration: none;
   color: #f5d1c3;
@@ -276,6 +306,7 @@ body {
   margin-bottom: 0px;
   font-size: 16px;
 }
+
 #socials .sbutton {
   width: 100px;
   height: 75px;
@@ -283,22 +314,27 @@ body {
   padding: 15px 10px;
   transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 #socials #fb:hover {
   color: #4668b3;
   text-shadow: 0px 0px 50px white;
 }
+
 #socials #inst:hover {
   color: #FCAF45;
   text-shadow: 0px 0px 50px white;
 }
+
 #socials #tw:hover {
   color: #3095d3;
   text-shadow: 0px 0px 50px white;
 }
+
 #socials #yt:hover {
   color: #c83237;
   text-shadow: 0px 0px 50px white;
 }
+
 #socials #gplus:hover {
   color: #d95333;
   text-shadow: 0px 0px 50px white;
@@ -336,25 +372,64 @@ body {
   list-style-type: none;
   transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 .ulfooter li {
   padding-left: 10px;
   width: 100px;
   transition: all 0.3s cubic-bezier(0, 0, 0.49, 1.06);
 }
+
 .ulfooter li:first-child {
   padding-left: 0px;
 }
+
 .ulfooter li a {
   text-decoration: none;
   display: block;
   height: 100%;
 }
+
 .ulfooter li:hover {
   /* text-shadow: 0px 0px 50px 5px white;  NIE MOŻNA NADAĆ 5PX GRUBOŚCI CIENIA DLA TEXT JAK W BOX-SHADOW? Chciałem aby kształt tła nie miał ostrych krawędzi tylko rozmywał się jak cień i całość była biała ale czego próbowałem to krawędzie były za ostre i prostokąt stawał się widoczny  */
   /* display: block; */
   box-shadow: 0px 0px 30px 5px white;
   border-radius: 8px;
   background-color: white;
+}
+
+h1 {
+  color: #5a291a;
+}
+
+.formcontainer {
+  border: 1px solid #000;
+  width: 80vw;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(50px, 1fr));
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+  align-items: center;
+  justify-items: center;
+}
+
+.formcontainer input {
+  border: none;
+  box-shadow: 0px 4px 20px 3px #3b5d78;
+  border-radius: 8px;
+  height: 1.5em;
+  text-align: center;
+}
+
+.formcontainer input::placeholder {
+  padding-left: 5px;
+  font-style: "Balsamiq Sans";
+}
+
+.formcontainer textarea {
+  grid-column: 1/span 12;
+  grid-row: 6/span 2;
 }
 
 html {
@@ -365,14 +440,14 @@ html {
 }
 
 #logo {
-  height: 100px;
+  height: auto;
   font-size: 76px;
   font-weight: 700;
   color: #5a291a;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 20px 0px;
 }
 
 /*# sourceMappingURL=output.css.map */
